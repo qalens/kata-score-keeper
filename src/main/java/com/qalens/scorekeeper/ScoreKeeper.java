@@ -17,17 +17,24 @@ public class ScoreKeeper {
     private void addTeamBScore(int by){
         teamBScore+=by;
     }
+    private void addTeamAScore(int by){
+        teamAScore+=by;
+    }
 
     public void scoreTeamB3() {
         addTeamBScore(3);
     }
 
     public void scoreTeamA1() {
+        addTeamAScore(1);
     }
 
     public void scoreTeamA2() {
+        addTeamAScore(2);
     }
 
     public void scoreTeamA3() {
+        addTeamAScore(3);
     }
+
 }
