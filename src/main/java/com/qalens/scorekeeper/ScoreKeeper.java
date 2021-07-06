@@ -8,9 +8,13 @@ public class ScoreKeeper {
     }
 
     public void scoreTeamB1() {
-        teamBScore++;
+        addTeamBScore(1);
     }
 
     public void scoreTeamB2() {
+        addTeamBScore(2);
+    }
+    private void addTeamBScore(int by){
+        teamBScore+=by;
     }
 }
