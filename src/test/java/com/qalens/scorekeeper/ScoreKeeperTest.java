@@ -20,15 +20,21 @@ public class ScoreKeeperTest {
         Assertions.assertEquals("000:001",scoreKeeper.getScore());
     }
     @Test
-    public void shouldGetScore000002WhenTeamBScores1Point(){
+    public void shouldGetScore000002WhenTeamBScores2Point(){
         scoreKeeper.scoreTeamB2();
         Assertions.assertEquals("000:002",scoreKeeper.getScore());
     }
+    @Test
+    public void shouldGetScore000003WhenTeamBScores3Point(){
+        scoreKeeper.scoreTeamB3();
+        Assertions.assertEquals("000:003",scoreKeeper.getScore());
+    }
 
     @Test
-    public void shouldGetScore000003WhenTeamBScores1And2Point(){
+    public void shouldGetScore000003WhenTeamBScores1And2And3Point(){
         scoreKeeper.scoreTeamB1();
         scoreKeeper.scoreTeamB2();
-        Assertions.assertEquals("000:003",scoreKeeper.getScore());
+        scoreKeeper.scoreTeamB3();
+        Assertions.assertEquals("000:006",scoreKeeper.getScore());
     }
 }

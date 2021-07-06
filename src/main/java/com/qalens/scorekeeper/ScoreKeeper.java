@@ -17,4 +17,7 @@ public class ScoreKeeper {
     private void addTeamBScore(int by){
         teamBScore+=by;
     }
+
+    public void scoreTeamB3() {
+    }
 }
