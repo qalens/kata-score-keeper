@@ -6,4 +6,7 @@ public class ScoreKeeper {
     public String getScore(){
         return String.format("%03d:%03d",teamAScore,teamAScore);
     }
+
+    public void scoreTeamB1() {
+    }
 }

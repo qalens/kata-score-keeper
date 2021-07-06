@@ -14,4 +14,9 @@ public class ScoreKeeperTest {
     public void shouldGetScore000000WhenNoOneScored(){
         Assertions.assertEquals("000:000",scoreKeeper.getScore());
     }
+    @Test
+    public void shouldGetScore000001WhenTeamBScores1Point(){
+        scoreKeeper.scoreTeamB1();
+        Assertions.assertEquals("000:001",scoreKeeper.getScore());
+    }
 }
