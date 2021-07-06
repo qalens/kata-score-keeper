@@ -19,4 +19,9 @@ public class ScoreKeeperTest {
         scoreKeeper.scoreTeamB1();
         Assertions.assertEquals("000:001",scoreKeeper.getScore());
     }
+    @Test
+    public void shouldGetScore000002WhenTeamBScores1Point(){
+        scoreKeeper.scoreTeamB2();
+        Assertions.assertEquals("000:002",scoreKeeper.getScore());
+    }
 }

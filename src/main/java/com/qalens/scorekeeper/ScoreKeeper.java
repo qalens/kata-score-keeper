@@ -10,4 +10,7 @@ public class ScoreKeeper {
     public void scoreTeamB1() {
         teamBScore++;
     }
+
+    public void scoreTeamB2() {
+    }
 }
