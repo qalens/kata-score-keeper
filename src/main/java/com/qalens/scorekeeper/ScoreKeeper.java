@@ -21,4 +21,13 @@ public class ScoreKeeper {
     public void scoreTeamB3() {
         addTeamBScore(3);
     }
+
+    public void scoreTeamA1() {
+    }
+
+    public void scoreTeamA2() {
+    }
+
+    public void scoreTeamA3() {
+    }
 }

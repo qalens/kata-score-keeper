@@ -31,10 +31,29 @@ public class ScoreKeeperTest {
     }
 
     @Test
+    public void shouldGetScore001000WhenTeamAScores1Point(){
+        scoreKeeper.scoreTeamA1();
+        Assertions.assertEquals("001:000",scoreKeeper.getScore());
+    }
+    @Test
+    public void shouldGetScore002000WhenTeamAScores2Point(){
+        scoreKeeper.scoreTeamA2();
+        Assertions.assertEquals("002:000",scoreKeeper.getScore());
+    }
+    @Test
+    public void shouldGetScore003000WhenTeamAScores3Point(){
+        scoreKeeper.scoreTeamA3();
+        Assertions.assertEquals("003:000",scoreKeeper.getScore());
+    }
+
+    @Test
     public void shouldGetScore000003WhenTeamBScores1And2And3Point(){
         scoreKeeper.scoreTeamB1();
         scoreKeeper.scoreTeamB2();
         scoreKeeper.scoreTeamB3();
-        Assertions.assertEquals("000:006",scoreKeeper.getScore());
+        scoreKeeper.scoreTeamA1();
+        scoreKeeper.scoreTeamA2();
+        scoreKeeper.scoreTeamA3();
+        Assertions.assertEquals("006:006",scoreKeeper.getScore());
     }
 }
