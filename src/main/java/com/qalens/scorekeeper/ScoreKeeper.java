@@ -19,5 +19,6 @@ public class ScoreKeeper {
     }
 
     public void scoreTeamB3() {
+        addTeamBScore(3);
     }
 }
